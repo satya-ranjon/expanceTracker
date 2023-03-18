@@ -1,0 +1,10 @@
+{
+  "transactions": [
+    {
+      "id": "e4a54561-a24a-4e86-8535-5e6de560d5b0",
+      "name": "3",
+      "amount": 3,
+      "type": "expense"
+    }
+  ]
+}
