@@ -7,6 +7,7 @@ import {
   editInActive,
   removeTransactions,
 } from "../../feature/transactions/transactionsSlice";
+import numberWithCommas from "../../utils/numberWithCommas";
 
 const Transaction = ({ transaction }) => {
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ const Transaction = ({ transaction }) => {
       }`}>
       <p>{transaction.name}</p>
       <div className="right">
-        <p>৳ {transaction.amount}</p>
+        <p>৳ {numberWithCommas(transaction.amount)}</p>
 
         <button className="link" onClick={handleEdit}>
           <img className="icon" src={Edit} />
